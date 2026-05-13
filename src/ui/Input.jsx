@@ -1,16 +1,11 @@
 import styled from "styled-components";
 
 const Input = styled.input`
-  border: none;
-  border-radius: 20px;
-  background-color: antiquewhite;
-  color: black;
-  padding: 0.5rem 0 0.5rem 2rem;
-  width: 30rem;
-  /* font-size: 1.2rem; */
-  font-size: 1rem;
-  font-weight: lighter;
-  margin: 2rem 0;
+  border: 1px solid var(--color-grey-300);
+  background-color: var(--color-grey-0);
+  border-radius: var(--border-radius-sm);
+  padding: 0.8rem 1.2rem;
+  box-shadow: var(--shadow-sm);
 `;
 
 export default Input;
