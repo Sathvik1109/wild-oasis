@@ -20,7 +20,7 @@ const Cabins = () => {
         <Button onClick={() => setShowForm((prev) => !prev)}>
           Add new cabin
         </Button>
-        {showForm && <CreateCabinForm></CreateCabinForm>}
+        {showForm && <CreateCabinForm setShowForm={setShowForm} />}
       </Row>
     </>
   );
