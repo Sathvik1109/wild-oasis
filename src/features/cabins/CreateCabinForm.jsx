@@ -104,7 +104,13 @@ function CreateCabinForm({ setShowForm }) {
       </FormRow>
 
       <FormRow label="Cabin Image" error={errors?.image?.message}>
-        <FileInput id="image" accept="image/*" />
+        <FileInput
+          id="image"
+          accept="image/*"
+          {...register("regularPrice", {
+            required: "This field is required",
+          })}
+        />
       </FormRow>
 
       <FormRow>
